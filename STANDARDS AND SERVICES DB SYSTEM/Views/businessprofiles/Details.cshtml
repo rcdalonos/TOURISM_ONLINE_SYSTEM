@@ -1,0 +1,72 @@
+﻿@model STANDARDS_AND_SERVICES_DB_SYSTEM.Models.businessprofile
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>businessprofile</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.businessname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.businessname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.businessaddress)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.businessaddress)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.telephoneno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.telephoneno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.mobileno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.mobileno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.emailaddress)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.emailaddress)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.businessowner)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.businessowner)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.owneraddress)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.owneraddress)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.typeid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.typeid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.classificationid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.classificationid)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
